@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | TSS Medical Education</title>
+    <meta name="description" content="View our interactive campus and clinical training gallery. Filter through photo placeholders of college buildings, advanced laboratories, events, and hospital complexes.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Header Bar & Navigation -->
+    <header class="global-header-sticky">
+        <div class="top-utility-bar">
+            <div class="top-left-branding">
+                <div class="logo-placeholder">TSS</div>
+                <div>
+                    <h1 class="college-main-title">TSS Medical Education</h1>
+                    <div class="affiliation-badges-container">
+                        <span class="affiliation-mini-badge">RGUHS Affiliated</span>
+                        <span class="affiliation-mini-badge">KNPSEA Recognised</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right-affiliations">
+                <p>◆ Affiliated to Rajiv Gandhi University of Health Sciences, Bengaluru</p>
+                <p>◆ Recognised by Karnataka Nursing & Paramedical Education Authority</p>
+                <p>◆ Clinical Training at TSS Shripad Hegde Kadave Hospital</p>
+            </div>
+        </div>
+
+        <nav class="main-nav-container">
+            <!-- Compact Branding shown only when shrunk -->
+            <a href="index.html" class="nav-compact-branding">
+                <div class="logo-placeholder" style="width: 35px; height: 35px; font-size: 0.65rem; margin: 0;">TSS</div>
+                <span class="compact-title">TSS Medical Education</span>
+            </a>
+
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-links-list" class="nav-links-list">
+                <li><a href="index.html" class="nav-item-link">Home</a></li>
+                <li><a href="institutes.html" class="nav-item-link">Institutes</a></li>
+                <li><a href="courses.html" class="nav-item-link">Courses</a></li>
+                <li><a href="hospital.html" class="nav-item-link">Hospital</a></li>
+                <li><a href="admissions.html" class="nav-item-link">Admissions</a></li>
+                <li><a href="gallery.html" class="nav-item-link current-active-page">Gallery</a></li>
+                <li><a href="about.html" class="nav-item-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-item-link">Contact</a></li>
+            </ul>
+            <a href="admissions.html" class="nav-admissions-btn">Admission 2026-27</a>
+        </nav>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="section-wrapper-container dark-navy-section-bg" style="padding: 60px 5%; text-align: center;">
+        <span class="section-tag-gold font-serif">Visual Tour</span>
+        <h2 class="section-title-serif" style="color: var(--color-white); font-size: 2.8rem; margin-bottom: 10px;">Our Campus & Clinical Life</h2>
+        <div class="section-heading-separator"></div>
+        <p style="color: var(--color-text-light); max-width: 650px; margin: 15px auto 0; opacity: 0.9;">Explore our classrooms, state-of-the-art diagnostic laboratories, active parent hospital wings, and student life milestones in Sirsi.</p>
+    </section>
+
+    <!-- Gallery Filters & Pinterest Grid -->
+    <section class="section-wrapper-container">
+        
+        <!-- Category filters bar -->
+        <div class="gallery-filters-buttons-strip reveal-on-scroll">
+            <button class="gallery-filter-action-btn filter-active" data-filter="all">All Photos</button>
+            <button class="gallery-filter-action-btn" data-filter="campus">Campus & Grounds</button>
+            <button class="gallery-filter-action-btn" data-filter="labs">Diagnostic Labs</button>
+            <button class="gallery-filter-action-btn" data-filter="hospital">Parent Hospital</button>
+            <button class="gallery-filter-action-btn" data-filter="student-life">Student Life</button>
+            <button class="gallery-filter-action-btn" data-filter="events">Events & Milestones</button>
+        </div>
+
+        <!-- Masonry Grid with 20 staggered photo placeholders -->
+        <div class="gallery-pinterest-layout-box reveal-fade-in">
+            
+            <!-- 1. College Building (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/></svg></div>
+                    <span class="placeholder-label-text">College Building Photo</span>
+                    <span class="placeholder-sub-desc">Academic block facade in Sirsi</span>
+                </div>
+            </div>
+
+            <!-- 2. Haematology Lab (Labs) -->
+            <div class="gallery-pinterest-photo-item" data-category="labs">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5M12 2C7.03 2 3 6.03 3 11c0 3.32 1.82 6.22 4.5 7.74M12 2v16"/></svg></div>
+                    <span class="placeholder-label-text">Haematology Lab Photo</span>
+                    <span class="placeholder-sub-desc">Pathology training lab setup</span>
+                </div>
+            </div>
+
+            <!-- 3. Hospital Front (Hospital) -->
+            <div class="gallery-pinterest-photo-item" data-category="hospital">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                    <span class="placeholder-label-text">Hospital Front Photo</span>
+                    <span class="placeholder-sub-desc">Active patient care base facade</span>
+                </div>
+            </div>
+
+            <!-- 4. Convocation (Events) -->
+            <div class="gallery-pinterest-photo-item" data-category="events">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <span class="placeholder-label-text">Convocation Day Photo</span>
+                    <span class="placeholder-sub-desc">Graduates receiving degree scrolls</span>
+                </div>
+            </div>
+
+            <!-- 5. Imaging Lab (Labs) -->
+            <div class="gallery-pinterest-photo-item" data-category="labs">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/></svg></div>
+                    <span class="placeholder-label-text">Imaging Lab Photo</span>
+                    <span class="placeholder-sub-desc">Computed Tomography training room</span>
+                </div>
+            </div>
+
+            <!-- 6. Campus Grounds (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <span class="placeholder-label-text">Campus Grounds Photo</span>
+                    <span class="placeholder-sub-desc">Green outdoor reading gardens</span>
+                </div>
+            </div>
+
+            <!-- 7. Library (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6"/></svg></div>
+                    <span class="placeholder-label-text">Central Library Photo</span>
+                    <span class="placeholder-sub-desc">Textbooks and reading desks</span>
+                </div>
+            </div>
+
+            <!-- 8. OT Complex (Hospital) -->
+            <div class="gallery-pinterest-photo-item" data-category="hospital">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16M12 7v4m-2-2h4"/></svg></div>
+                    <span class="placeholder-label-text">OT Complex Photo</span>
+                    <span class="placeholder-sub-desc">Sterile surgical assistant suites</span>
+                </div>
+            </div>
+
+            <!-- 9. Annual Day (Events) -->
+            <div class="gallery-pinterest-photo-item" data-category="events">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></div>
+                    <span class="placeholder-label-text">Annual Day Photo</span>
+                    <span class="placeholder-sub-desc">Cultural stage events and acts</span>
+                </div>
+            </div>
+
+            <!-- 10. Biochemistry Lab (Labs) -->
+            <div class="gallery-pinterest-photo-item" data-category="labs">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5M12 2C7.03 2 3 6.03 3 11c0 3.32 1.82 6.22 4.5 7.74M12 2v16"/></svg></div>
+                    <span class="placeholder-label-text">Biochemistry Lab Photo</span>
+                    <span class="placeholder-sub-desc">Chemical analysis pathology lab</span>
+                </div>
+            </div>
+
+            <!-- 11. Hostel (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9 22V12h6v10"/></svg></div>
+                    <span class="placeholder-label-text">Hostel Facility Photo</span>
+                    <span class="placeholder-sub-desc">Student secure residence room</span>
+                </div>
+            </div>
+
+            <!-- 12. Practical Class (Student Life) -->
+            <div class="gallery-pinterest-photo-item" data-category="student-life">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <span class="placeholder-label-text">Practical Class Photo</span>
+                    <span class="placeholder-sub-desc">Student interactive scrub session</span>
+                </div>
+            </div>
+
+            <!-- 13. Award Ceremony (Events) -->
+            <div class="gallery-pinterest-photo-item" data-category="events">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <span class="placeholder-label-text">Award Ceremony Photo</span>
+                    <span class="placeholder-sub-desc">Topper awards and accolades distribution</span>
+                </div>
+            </div>
+
+            <!-- 14. Emergency Ward (Hospital) -->
+            <div class="gallery-pinterest-photo-item" data-category="hospital">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+                    <span class="placeholder-label-text">Emergency Ward Photo</span>
+                    <span class="placeholder-sub-desc">Active trauma clinical monitoring setup</span>
+                </div>
+            </div>
+
+            <!-- 15. Computer Lab (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg></div>
+                    <span class="placeholder-label-text">Computer Lab Photo</span>
+                    <span class="placeholder-sub-desc">BHA health records software room</span>
+                </div>
+            </div>
+
+            <!-- 16. Guest Lecture (Events) -->
+            <div class="gallery-pinterest-photo-item" data-category="events">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6"/></svg></div>
+                    <span class="placeholder-label-text">Guest Lecture Photo</span>
+                    <span class="placeholder-sub-desc">Senior doctor addressing Allied Health classes</span>
+                </div>
+            </div>
+
+            <!-- 17. Canteen (Campus) -->
+            <div class="gallery-pinterest-photo-item" data-category="campus">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9 22V12h6v10"/></svg></div>
+                    <span class="placeholder-label-text">Campus Canteen Photo</span>
+                    <span class="placeholder-sub-desc">Vegetarian dining hall in Sirsi</span>
+                </div>
+            </div>
+
+            <!-- 18. Lab Session (Student Life) -->
+            <div class="gallery-pinterest-photo-item" data-category="student-life">
+                <div class="image-placeholder pinterest-height-short">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5M12 2C7.03 2 3 6.03 3 11c0 3.32 1.82 6.22 4.5 7.74M12 2v16"/></svg></div>
+                    <span class="placeholder-label-text">Student Lab Session Photo</span>
+                    <span class="placeholder-sub-desc">Students performing biochemical analysis</span>
+                </div>
+            </div>
+
+            <!-- 19. Patient Ward (Hospital) -->
+            <div class="gallery-pinterest-photo-item" data-category="hospital">
+                <div class="image-placeholder pinterest-height-medium">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16M12 7v4m-2-2h4"/></svg></div>
+                    <span class="placeholder-label-text">Patient Ward Photo</span>
+                    <span class="placeholder-sub-desc">Clinical ward bedside setup logs</span>
+                </div>
+            </div>
+
+            <!-- 20. Health Camp (Events) -->
+            <div class="gallery-pinterest-photo-item" data-category="events">
+                <div class="image-placeholder pinterest-height-tall">
+                    <span class="placeholder-badge-gold">ADD IMG</span>
+                    <div class="placeholder-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <span class="placeholder-label-text">Community Health Camp Photo</span>
+                    <span class="placeholder-sub-desc">Students organizing free medical camp in Sirsi</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Tour Booking Link -->
+        <div style="text-align: center;">
+            <a href="admissions.html" class="btn-accent">Book a Personal Campus Visit Tour</a>
+        </div>
+    </section>
+
+    <!-- Floating Pulse Enquiry Button (FAB) -->
+    <button id="floating-enquiry-fab" class="floating-pulse-enquiry-btn" aria-label="Open admission enquiry form">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Admission Enquiry 2026-27
+    </button>
+
+    <!-- Global Pop-up Enquiry Modal -->
+    <div id="global-enquiry-modal" class="modal-overlay-backdrop">
+        <div class="modal-card-dialog">
+            <button id="modal-close-x-btn" class="modal-close-x-btn">✕</button>
+            <div class="modal-padding-body">
+                
+                <!-- Main Enquiry Form -->
+                <form id="enquiry-form-element" class="modal-enquiry-form">
+                    <div class="modal-header-block">
+                        <h3>Admission Enquiry</h3>
+                        <p>Academic Year 2026-2027 | TSS Medical Education</p>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-name-input">Name *</label>
+                        <input type="text" id="modal-name-input" class="form-control-input" placeholder="Enter student name" required>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-mobile-input">Mobile Number *</label>
+                        <input type="tel" id="modal-mobile-input" class="form-control-input" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-email-input">Email Address</label>
+                        <input type="email" id="modal-email-input" class="form-control-input" placeholder="Enter email address">
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-course-select">Select Course of Interest *</label>
+                        <select id="modal-course-select" class="form-control-input" required>
+                            <option value="">-- Choose a course --</option>
+                            <option value="BSc MLT">BSc Medical Laboratory Technology (Degree)</option>
+                            <option value="BSc IT">BSc Imaging Technology (Degree)</option>
+                            <option value="BSc OT & AT">BSc Operation Theatre & Anaesthesia Tech (Degree)</option>
+                            <option value="BHA">BHA (Bachelors in Hospital Administration - Any stream)</option>
+                            <option value="DMLT">DMLT (Laboratory Diploma)</option>
+                            <option value="DMIT">DMIT (Imaging Diploma)</option>
+                            <option value="DOT & AT">DOT & AT (OT Diploma)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-qual-select">Your Current Qualification *</label>
+                        <select id="modal-qual-select" class="form-control-input" required>
+                            <option value="">-- Choose qualification --</option>
+                            <option value="10th">Passed 10th Standard</option>
+                            <option value="12th Science">Passed 12th Standard (Science stream)</option>
+                            <option value="12th Commerce">Passed 12th Standard (Commerce stream)</option>
+                            <option value="12th Arts">Passed 12th Standard (Arts stream)</option>
+                            <option value="Graduate">Graduated (Other courses)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-input">
+                        <label for="modal-msg-input">Message / Questions</label>
+                        <textarea id="modal-msg-input" class="form-control-input" placeholder="Write any specific query here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-accent" style="width: 100%; padding: 14px;">Submit Admission Enquiry</button>
+                </form>
+
+                <!-- Custom Animated Success Screen -->
+                <div id="modal-success-screen" class="modal-success-screen">
+                    <div class="success-check-circle">
+                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <h3>Submission Successful!</h3>
+                    <p>Thank you for your interest in TSS Medical Education. Our admissions counselor will call you within 24 hours to guide you through the process.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Pre-Footer Information Strip -->
+    <div class="pre-footer-coordinate-strip">
+        <div class="pre-footer-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zM12 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+            <span>TSS Medical Education, Sirsi, Karnataka — 581402</span>
+        </div>
+        <div class="pre-footer-item">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Call us: +91 91132 94205</span>
+        </div>
+        <div class="pre-footer-item">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+            <span>Affiliated to RGUHS, Bengaluru</span>
+        </div>
+        <div class="pre-footer-item">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Recognised by KNPSEA, Bengaluru</span>
+        </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="global-footer-block">
+        <div class="footer-top-columns-layout">
+            <div class="footer-column-item">
+                <h3>TSS Medical Education</h3>
+                <p class="footer-brand-body">A premier healthcare educational hub established in Sirsi, Uttara Kannada. Committed to molding high-caliber laboratory technologists, radiographers, anaesthesia assistants, and hospital managers under expert training guidelines.</p>
+                <div class="footer-affiliation-note-strip">
+                    <div class="footer-mini-badge-row">
+                        <strong>Degree College:</strong> Affiliated to RGUHS, Bengaluru
+                    </div>
+                    <div class="footer-mini-badge-row">
+                        <strong>Paramedical College:</strong> Recognised by KNPSEA, Bengaluru
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column-item">
+                <h3>Degree Courses</h3>
+                <ul class="footer-links-list">
+                    <li><a href="courses.html#bsc-mlt">BSc Medical Laboratory Technology</a></li>
+                    <li><a href="courses.html#bsc-it">BSc Imaging Technology</a></li>
+                    <li><a href="courses.html#bsc-ot-at">BSc Operation Theatre & Anaesthesia Tech</a></li>
+                    <li><a href="courses.html#bha">Bachelors in Hospital Administration</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-item">
+                <h3>Diploma Courses</h3>
+                <ul class="footer-links-list">
+                    <li><a href="courses.html#dmlt">Diploma in Medical Lab Technology</a></li>
+                    <li><a href="courses.html#dmit">Diploma in Imaging Technology</a></li>
+                    <li><a href="courses.html#dot-at">Diploma in Operation Theatre & Anaesthesia</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-item">
+                <h3>Quick Navigation</h3>
+                <ul class="footer-links-list">
+                    <li><a href="institutes.html">Colleges Profile</a></li>
+                    <li><a href="hospital.html">Parent Hospital Advantage</a></li>
+                    <li><a href="admissions.html">Admissions 2026-27</a></li>
+                    <li><a href="gallery.html">Photo Library</a></li>
+                    <li><a href="about.html"> Trustees & Management</a></li>
+                    <li><a href="contact.html">Address & Location Map</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-copyright-bar">
+            <p>&copy; 2026 TSS Medical Education. All Rights Reserved.</p>
+            <p>Designed to Premium Medical College Standards in Sirsi, Karnataka.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
